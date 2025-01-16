@@ -1,5 +1,6 @@
-streamlit==1.10.0
+streamlit==1.22.0
 requests==2.27.1
+altair==4.0
 pytz
 python-dotenv
 Babel
