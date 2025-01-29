@@ -109,7 +109,7 @@ def main():
                 st.info("Пока вы на перерыве, лиды на вас не распределяются")
             elif selected_manager["working_status"] == "end_day" and selected_manager["is_started_today"] == True:
                 st.warning("Сегодня больше нельзя встать на смену")
-            elif selected_manager["working_status"] == "end_day":
+            elif selected_manager["working_status"] in ["end_day",'warning_1', 'warning_2']:
                 st.button("🌟 Начать день", on_click=update_status, args=(url_fetch, selected_manager["manager_id"], "start_day"))
                 st.info("В течении 10 минут после нажатия на вас начнут распределяться лиды")
 
